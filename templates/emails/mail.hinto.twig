@@ -1,0 +1,14 @@
+{# templates/emails/mail.hinto.twig #}
+<h1>Mail post utenti {{ "now"|date("d/m/Y H:i:s") }}</h1>
+<small>Numero risultati selezionato: {{numero_risultati}}</small>
+
+<p>
+ {% for utente in risultati %}
+ <h2>Post di {{utente.name}}</h2>
+ <ul>
+  {% for posts in utente.listaPost %}
+  <li>{{posts.body}}</li>
+  {% endfor %}
+ </ul>
+ {% endfor %}
+</p>

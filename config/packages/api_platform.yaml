@@ -1,0 +1,5 @@
+api_platform:
+    title: 'Prova HINTO API'
+    description: 'HINTO API'
+    show_webby: false
+    version: '1.0.0'
